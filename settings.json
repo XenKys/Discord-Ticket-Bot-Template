@@ -1,0 +1,8 @@
+{
+    "SERVER_ID": "Here your server ID",
+    "BOT_TOKEN": "Here your bot token",
+    "MONGODB_URL": "Here your mongodb url",
+    "TICKET_CHANNEL_ID": "Here the ticket channel ID",
+    "TICKETS_CATEGORY_ID": "Here the tickets category ID",
+    "SUPPORT_ROLE_ID": "Here the support role ID"
+}

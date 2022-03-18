@@ -1,0 +1,25 @@
+{
+  "name": "discord-ticket-bot-template",
+  "version": "1.0.0",
+  "description": "A template to create a discord bot for a ticket system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XenKys/Discord-Ticket-Bot-Template.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XenKys/Discord-Ticket-Bot-Template/issues"
+  },
+  "homepage": "https://github.com/XenKys/Discord-Ticket-Bot-Template#readme",
+  "dependencies": {
+    "discord-html-transcripts": "^2.2.8",
+    "discord.js": "^13.6.0",
+    "glob": "^7.2.0",
+    "mongoose": "^6.2.7"
+  }
+}
