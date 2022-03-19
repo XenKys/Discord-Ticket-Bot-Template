@@ -1,7 +1,7 @@
 const DiscordJS = require("discord.js")
 const DiscordTRANSCRIPTS = require("discord-html-transcripts")
 
-const ticketsModel = require("../../models/tickets")
+const ticketsModel = require("../models/tickets")
 
 module.exports = {
     name: "transcript",

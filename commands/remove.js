@@ -1,6 +1,6 @@
 const DiscordJS = require("discord.js")
 
-const ticketsModel = require("../../models/tickets")
+const ticketsModel = require("../models/tickets")
 
 module.exports = {
     name: "remove",

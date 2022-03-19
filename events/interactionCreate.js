@@ -46,6 +46,12 @@ client.on("interactionCreate", async (interaction) => {
                     )
                 ]
             })
+
+            new ticketsModel({
+                ticketID: interaction.channelId,
+                ownerID: interaction.user.id,
+                locked: true
+            }).save()
         } else if (interaction.customId == "unlock") {
             const ticketsData = await ticketsModel.findOne({ ticketID: interaction.channelId }).catch((err) => console.log(err))
 
@@ -110,6 +116,7 @@ client.on("interactionCreate", async (interaction) => {
             if (!ticketsData) return await interaction.deferUpdate().catch(() => {}) // Check if the channel is a ticket
 
             await interaction.channel.delete().catch(() => {})
+            await ticketsData.delete()
         }
     } else if (interaction.isCommand()) {
         const cmd = client.commands.get(interaction.commandName)

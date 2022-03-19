@@ -5,7 +5,6 @@ module.exports = mongo.model(
     new mongo.Schema({
         ticketID: String,
         ownerID: String,
-        messageID: String,
         locked: Boolean
     })
 )
